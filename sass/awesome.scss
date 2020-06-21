@@ -1,0 +1,54 @@
+@import "./defaults.scss";
+
+.logoText {
+  font-family: "Croma Sans";
+  font-size: $xxl-size;
+  color: $green;
+  transition: .7s;
+}
+.header-distancer{
+    margin-bottom: 20px;
+}
+.logoTextMin {
+    font-family: "Croma Sans";
+    font-size: $xl-size;
+}
+
+@media (max-width: 1150px) and (min-width: 901px){
+    .logoText{
+        font-size: $xl-size;
+    }
+    .header-distancer{
+        margin-bottom: 6px;
+    }
+}
+@media (max-width: 900px) and (min-width: 769px){
+    .logoText{
+        font-size: $l-size;
+    }
+    .header-distancer{
+        margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .logoText{
+        width: 100%;
+        text-align: center;
+        font-size: $l-size;
+        margin-bottom: 10px;
+    }
+
+    .logoTextMin {
+        margin-bottom: 0;
+    }
+    .header-distancer{
+        margin-bottom: 62px;
+    }
+}
+.full-width-wrapper{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid red;    
+}

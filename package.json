@@ -1,0 +1,31 @@
+{
+  "name": "mykobold",
+  "version": "0.1.0",
+  "author": "Casian Zbona",
+  "description": "Landing Kobold products pages for ZBONA SOLUTIONS SRL-D",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next -p 8085",
+    "build": "next build",
+    "start": "next start -p 8085",
+    "export": "next export",
+    "build_export": "next build && next export"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.10.2",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "file-loader": "^6.0.0",
+    "next": "^9.4.4",
+    "next-compose-plugins": "^2.2.0",
+    "next-fonts": "^1.2.0",
+    "next-images": "^1.4.0",
+    "next-routes": "^1.4.2",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1",
+    "url-loader": "^4.1.0"
+  }
+}
