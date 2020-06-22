@@ -17,4 +17,8 @@ const withCSS = require('@zeit/next-css');
 //     exportTrailingSlash: true
 // }
 
-module.exports = withPlugins([withCSS(), withSass({}), withFonts()], {});
+module.exports = withPlugins([withCSS({
+    cssLoaderOptions: {
+        url: false
+      }
+}), withSass({}), withFonts()], {});

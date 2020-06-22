@@ -1,5 +1,7 @@
 import "../sass/defaults.scss";
 import "../sass/awesome.scss";
+import 'react-awesome-slider/dist/styles.css';
+import  'react-awesome-slider/dist/custom-animations/scale-out-animation.css';
 
 
 // import App from 'next/app'

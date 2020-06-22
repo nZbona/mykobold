@@ -2,8 +2,24 @@ import Head from 'next/head'
 
 import Header from '../components/Header'
 
+import AwesomeSlider from 'react-awesome-slider';
+import CrossfadeImage from '../components/CrossfadeImage';
+import Slideshow from '../components/slideshow/Slideshow';
+import { Box } from '@material-ui/core';
+import { useState } from 'react';
+
+
 
 export default function Home() {
+
+  const slideImages = [
+    'pro_images/vk200/hero_img_0.jpg',
+    'pro_images/vk200/hero_img_1.jpg',
+    'pro_images/vk200/hero_img_3.jpg'
+  ];
+
+  const [sliderImage, setSliderImage] = useState(slideImages[0]);
+
   return (
     <div className="container">
       <Head>
@@ -15,8 +31,17 @@ export default function Home() {
 
     {/* <div style={{marginTop: "7%"}}></div> */}
       <main style={{display: "block"}}>
-        <section className="full-width-wrapper">
-            Hero Section
+        <section className="full-width-wrapper slider-container">
+          <Slideshow
+            slides={['pro_images/vk200/hero_img_0.jpg',
+                    'pro_images/vk200/hero_img_1.jpg',
+                    'pro_images/vk200/hero_img_3.jpg',]}
+            effect={'fade'}
+            slideInterval={3000}
+            enableKeyboard= {true}
+          />
+                    
+              
         </section>
         
         
