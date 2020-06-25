@@ -24,14 +24,14 @@ export default function Home() {
     {/* <div style={{marginTop: "7%"}}></div> */}
       <main style={{display: "block"}}>
         <section className="full-width-wrapper slider-container">
-          {/* <HeroWidget /> */}
+          <HeroWidget />
           <Slideshow
             slides={[
               'pro_images/hero/family.jpg',
               'pro_images/hero/hero_img_5.jpg',
               'pro_images/hero/hero_img_6.jpg',
-              // 'pro_images/hero/hero_img_7.jpg',
-              // 'pro_images/hero/stage.jpg'
+              'pro_images/hero/hero_img_7.jpg',
+              'pro_images/hero/stage.jpg'
                     ]}
             effect={'fade'}
             slideInterval={6000}
